@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_gradient"
+    tools:context="nrzkyyh.reptiles_data.Regist">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="REGISTRASI"
+        android:id="@+id/textView"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="#1b5e28"
+        android:background="#ffffff"
+        android:layout_marginTop="45dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+
+        android:padding="16dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/verify_username"
+            android:hint="Username"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#fff"
+            android:textColorHint="#fff"
+            />
+
+        <EditText
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/verify_password"
+            android:layout_gravity="center_horizontal"
+            android:hint="Password"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:textColorHint="#fff"
+             />
+        <EditText
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/confirm_password"
+            android:layout_gravity="center_horizontal"
+            android:hint="Confirm Password"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:textColorHint="#fff"
+            />
+
+    </LinearLayout>
+
+
+
+    <Button
+        android:onClick="register_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registrasi"
+        android:id="@+id/btn_register"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/button_select"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        />
+
+</RelativeLayout>

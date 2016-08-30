@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="nrzkyyh.reptiles_data">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/crocodile"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="nrzkyyh.reptiles_data.android.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths"></meta-data>
+        </provider>
+
+        <!-- Splash screen -->
+        <activity
+            android:name=".splashscreen"
+            android:label="Reptiles Data"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/TFullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Main activity -->
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar" />
+        <activity android:name=".Info" />
+        <activity android:name=".Cari" />
+        <activity android:name=".PDR" />
+        <activity android:name=".Regist"
+            android:theme="@style/AppTheme2"/>
+        <activity android:name=".Verifikasi"
+            android:theme="@style/AppTheme2"/>
+        <activity android:name=".Tambah"
+            android:theme="@style/AppTheme2"></activity>
+        <activity android:name=".Details"
+            android:theme="@style/AppTheme2"></activity>
+    </application>
+
+</manifest>

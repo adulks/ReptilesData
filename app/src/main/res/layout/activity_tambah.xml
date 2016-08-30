@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_gradient"
+    tools:context="nrzkyyh.reptiles_data.Tambah">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center">
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/namareptil"
+            android:textSize="10pt"
+            android:hint="Nama Reptil"
+            android:textColor="#fff"
+            android:textColorHint="#fff"
+             />
+        </android.support.design.widget.TextInputLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="121dp">
+
+            <TextView
+                android:id="@+id/tPhoto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:padding="16dp"
+                android:textColor="#fff"
+                android:text="PHOTO"/>
+            <ImageView
+                android:id="@+id/iReptil"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:scaleType="centerCrop"
+                android:background="@drawable/border_white"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="20dp"/>
+
+            <Button
+                android:layout_below="@+id/tPhoto"
+                android:id="@+id/bCamera"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/ic_camera"/>
+            <Button
+                android:layout_alignBottom="@+id/bCamera"
+                android:layout_toEndOf="@id/bCamera"
+                android:id="@+id/bGallery"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/ic_gallery"/>
+
+
+        </RelativeLayout>
+
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <EditText
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spekreptil"
+            android:layout_gravity="center_horizontal"
+            android:textSize="10pt"
+            android:layout_marginBottom="30dp"
+            android:hint="Spesifikasi"
+            android:textColor="#fff"
+            android:textColorHint="#fff"
+             />
+        </android.support.design.widget.TextInputLayout>
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Simpan Data"
+        android:id="@+id/bSimpan"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/button_select"
+        />
+</RelativeLayout>
+

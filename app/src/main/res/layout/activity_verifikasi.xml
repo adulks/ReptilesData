@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_gradient"
+    tools:context="nrzkyyh.reptiles_data.Regist">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/verify_username"
+            android:textSize="10pt"
+            android:hint="Username"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:textColorHint="#fff"
+            />
+
+        <EditText
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/verify_password"
+            android:layout_gravity="center_horizontal"
+            android:textSize="10pt"
+            android:hint="Password"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:textColorHint="#fff"
+             />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VERIFIKASI"
+        android:id="@+id/textView"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="#1b5e28"
+        android:layout_marginTop="45dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"/>
+
+
+
+    <Button
+        android:onClick="verifikasi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="VERIFIKASI"
+        android:id="@+id/btn_verify"
+        android:background="@drawable/button_select"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="60dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
+
+</RelativeLayout>
